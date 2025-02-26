@@ -1,6 +1,7 @@
 
 body {
     background-color: gray;
+    height: 100%;
 }
 
 .adder1button {
@@ -21,6 +22,7 @@ body {
 
 .adder1button:hover {
     transform: translateX(-50%) translateY(-50%) scale(1.1);
+    background-color: #FF8F8F;
 }
 
 .adder1button:active {
@@ -115,6 +117,17 @@ body {
     transform: translateX(-50%) translateY(-50%);
 }
 
+#power-label {
+    font-size: 80px;
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    top: 30vh;
+    left: 50vw;
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 1000px;
+    text-align: center;
+}
+
 .buygenerator1 {
     height: 150px;
     width: 150px;
@@ -141,5 +154,73 @@ body {
 }
 
 .buygenerator1:active {
+    transform: translateX(-50%) translateY(-50%) scale(0.95);
+}
+
+.labeldeco {
+    position: absolute;
+    top: 20vh;
+    left: 50vw;
+    width: 500px;
+    height: 80px;
+    background-color: #3FFF3F;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 12px;
+    border: 8px solid #2FEF2F;
+}
+
+.powerlabeldeco {
+    position: absolute;
+    top: 30vh;
+    left: 50vw;
+    width: 500px;
+    height: 80px;
+    background-color: #FFDF2F;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 12px;
+    border: 8px solid #EFCF1F;
+}
+
+.bottom-section {
+    position: absolute;
+    top: 70vh;
+    left: 50vw;
+    width: 2000px;
+    height: 700px;
+    background-color: #8F8FFF;
+    z-index: -2;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 12px;
+    border: 8px solid #7F7FEF;
+}
+
+.ps1 {
+    height: 150px;
+    width: 150px;
+    background-color: #FF9F4F;
+    color: black;
+    padding: 15px 32px;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    border: 8px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s, border-color 0.3s;
+    position: absolute;
+    bottom: -50px;
+    left: 100px;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ps1:hover {
+    transform: translateX(-50%) translateY(-50%) scale(1.1);
+}
+
+.ps1:active {
     transform: translateX(-50%) translateY(-50%) scale(0.95);
 }
